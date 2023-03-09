@@ -55,6 +55,9 @@
 
 В меню -> поиск ввести: "for developers", открыть настройки и включить режим разработчика.
 
+![For developers](./img/for_developers.png)
+
+![For developers](./img/devmod.png)
 
 ### 5. Установка Craft
 
@@ -84,7 +87,7 @@
 
     Craft                : C:\CraftRoot
     Version              : master
-    ABI                  : windows-msvc2019_64-c1
+    ABI                  : windows-c1-msvc2019_x86_64
     Download directory   : C:\CraftRoot\download
 
 ```
@@ -128,6 +131,8 @@ Craft работает как пакетный менеджер, даже нап
 
 
 Пакетный менеджер скачает все необъодимые исходники, со всеми зависимостями, инструкции для сборки и соберет и установит пакет в `C:\CraftRoot\bin`.
+
+![Console CraftRoot](./img/installed_bin.png)
 
 Запуск тестов установленной версии:
 
