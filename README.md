@@ -48,7 +48,7 @@
 Открыть PowerShell <u>от Администратора</u> и ввести команду:
 
 ```powershell
-    winget install --id=Microsoft.VisualStudio.2019.BuildTools --exact --includeOptional --add-extra-args "--includeRecommended --includeRecommendedForThisScenario --add Microsoft.VisualStudio.Workload.NativeDesktop --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Component.VC.ATL --add Microsoft.VisualStudio.Component.Windows10SDK.19041"
+    winget install --id Microsoft.VisualStudio.2019.BuildTools --exact --override "--includeRecommended --includeRecommendedForThisScenario --add Microsoft.VisualStudio.Workload.NativeDesktop --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Component.VC.ATL --add Microsoft.VisualStudio.Component.Windows10SDK.19041"
 ```
 
 ### 4. Включить development mode в Windows
@@ -96,7 +96,22 @@
 
 ### 6. Сборка Okular с помощью Craft
 
-Craft работает как пакетный менеджер, даже напоминает portage в Gentoo. Он может искать нужный пакет и инструкции для сборки.
+Открыть из меню консоль `Craft CraftRoot`
+
+![Craft CraftRoot](./img/menu_craft_craftroot.png)
+
+В консоли запустить скрипт инициализации:
+
+```powershell
+    C:\CraftRoot\craft\craftenv.ps1
+
+```
+
+Скрипт должен выполниться без ошибок, он укажет craft переменные окружения:
+
+![Console CraftRoot](./img/console_craftroot.png)
+
+Craft работает как пакетный менеджер, даже напоминает portage в Gentoo. Он bможет искать нужный пакет и инструкции для сборки.
 
 
 ```powershell
