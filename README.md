@@ -48,7 +48,7 @@
 Открыть PowerShell <u>от Администратора</u> и ввести команду:
 
 ```powershell
-    winget install --id Microsoft.VisualStudio.2019.BuildTools --exact --override "--includeRecommended --includeRecommendedForThisScenario --add Microsoft.VisualStudio.Workload.NativeDesktop --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Component.VC.ATL --add Microsoft.VisualStudio.Component.Windows10SDK.19041"
+    winget install --id Microsoft.VisualStudio.2019.BuildTools --exact --override "--includeRecommended --includeRecommendedForThisScenario --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.ATL --add Microsoft.VisualStudio.Component.Windows10SDK.19041"
 ```
 
 ### 4. Включить development mode в Windows
@@ -62,7 +62,7 @@
 ### 5. Установка Craft
 
 
-Открыть PowerShell <u>от Администратора</u> и ввести команду:
+Открыть PowerShell **от Администратора** и ввести команду:
 
 
 ```powershell
@@ -92,7 +92,7 @@
 
 ```
 
-Закрыть PowerShell <u>от Администратора</u>.
+Закрыть PowerShell **от Администратора**.
 
 Если установлен сторонний Антивирус, то необходимо исключить директорию `C:\CraftRoot\` из области проверки.
 
